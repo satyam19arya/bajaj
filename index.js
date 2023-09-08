@@ -40,17 +40,16 @@ app.post('/bfhl', (req, res) => {
       console.error(error.message);
       res.status(400).json({ error: error.message });
     }
-  });
+});
   
-  app.get('/bfhl', (req, res) => {
+app.get('/bfhl', (req, res) => {
     const response = {
       operation_code: 1,
     };
-  
     res.status(200).json(response);
-  });
+});
 
-  const PORT = 4000
+const PORT = 4000
 
 app.listen(PORT, () => {
     console.log(`listening on port: ${PORT}`);
