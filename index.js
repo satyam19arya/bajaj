@@ -14,9 +14,9 @@ app.post('/bfhl', (req, res) => {
       if (!Array.isArray(data)) {
         throw new Error('Invalid input format: "data" should be an array');
       }
-      const user_id = "john_doe_17091999";
-      const email = "john@xyz.com";
-      const roll_number = "ABCD123";
+      const user_id = "satyam19arya";
+      const email = "sa7940@srmsit.edu.in";
+      const roll_number = "RA2011028030002";
   
       const numbers = data.filter(item => !isNaN(item)); 
       const alphabets = data.filter(item => isNaN(item)); 
